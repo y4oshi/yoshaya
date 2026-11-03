@@ -1,0 +1,52 @@
+/* # Shared box sizing keeps padding inside each element's width. */
+* { box-sizing: border-box; }
+/* # Set the palette, base font and warm page background. */
+body { margin: 0; background: #fbf9f4; color: #38252b; font: 15px/1.6 Arial, sans-serif; }
+/* # Keep anchor destinations clear of the sticky navigation. */
+html { scroll-padding-top: 110px; }
+/* # Inherit text styling for form controls and links. */
+a { color: inherit; } button, input { font: inherit; } button, .button { cursor: pointer; } button { color: inherit; }
+/* # Give keyboard users an obvious focus indicator. */
+:focus-visible { outline: 3px solid #967c35; outline-offset: 4px; }
+/* # Make the hidden attribute reliable even on grid elements. */
+[hidden] { display: none !important; }
+/* # Announcement strip and compact sticky navigation. */
+.announcement { background: #673941; color: #fff9ed; text-align: center; padding: 9px 20px; font-size: 11px; letter-spacing: 1px; } header { display: flex; justify-content: space-between; align-items: center; padding: 19px 6%; background: #fbf9f4; border-bottom: 1px solid #e5ded7; position: sticky; top: 0; z-index: 2; }
+/* # Combine the supplied logo with a small wordmark. */
+.brand { display: flex; gap: 12px; align-items: center; text-decoration: none; font: 27px Georgia, serif; letter-spacing: 2px; } .brand img { width: 48px; height: 48px; } .brand-small { display: block; font: 9px Arial, sans-serif; letter-spacing: 3px; margin-top: 4px; }
+/* # Arrange navigation links and the only cart-opening button. */
+nav { display: flex; align-items: center; gap: 32px; } nav a { text-decoration: none; font-size: 13px; } .cart-button { border: 1px solid #673941; background: transparent; padding: 9px 19px; border-radius: 30px; } #cartCount { margin: 0 6px; }
+/* # Give headings a large editorial serif style. */
+h1, h2, h3 { font-family: Georgia, serif; font-weight: normal; line-height: 1.08; } h1 { font-size: clamp(48px, 5.6vw, 82px); margin: 22px 0; letter-spacing: -3px; } h2 { font-size: clamp(32px, 3.4vw, 48px); margin: 12px 0 24px; letter-spacing: -1px; } h3 { font-size: 23px; margin: 10px 0; } i { color: #985d66; } .eyebrow { font-size: 10px; letter-spacing: 2px; font-weight: bold; }
+/* # Divide the hero into copy and a photographic stationery arrangement. */
+.hero { display: grid; grid-template-columns: 1fr 1fr; gap: 6%; align-items: center; padding: 62px 8% 70px; } .intro { color: #76676b; margin-bottom: 32px; } .hero-foot { font-size: 9px; letter-spacing: 2px; margin-top: 32px; }
+/* # Reusable burgundy action button. */
+.button { display: inline-block; border: none; background: #673941; color: white; padding: 15px 27px; text-decoration: none; border-radius: 30px; font-size: 13px; } button:hover, .button:hover { filter: brightness(.93); }
+/* # Position real product photographs on a warm paper-coloured backdrop. */
+.hero-art { position: relative; height: 480px; border-radius: 180px 180px 12px 12px; background: #eee7dc; overflow: hidden; } .hero-book { position: absolute; width: 60%; height: 65%; object-fit: contain; left: 25%; top: 19%; transform: rotate(10deg); mix-blend-mode: multiply; } .hero-pencil { position: absolute; width: 29%; height: 60%; object-fit: contain; top: 28%; left: 6%; transform: rotate(-14deg); mix-blend-mode: multiply; } .art-label { position: absolute; top: 45px; left: 0; right: 0; text-align: center; font-size: 9px; letter-spacing: 3px; } .art-note { position: absolute; bottom: 25px; left: 25px; font: italic 22px Georgia, serif; } .art-price { position: absolute; bottom: 25px; right: 25px; font-size: 10px; text-align: right; }
+/* # Three small collection benefits form a quiet divider. */
+.benefits { display: flex; justify-content: space-evenly; gap: 20px; padding: 22px 6%; border-top: 1px solid #e5ded7; border-bottom: 1px solid #e5ded7; font-size: 11px; }
+/* # Give the catalogue generous margins and a flexible heading row. */
+.collection { padding: 70px 8%; } .section-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; } .section-head>p, .muted { color: #7b6f70; font-size: 13px; }
+/* # Place category pills and search on the same wrapping toolbar. */
+.toolbar { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin: 24px 0; } .filters { display: flex; flex-wrap: wrap; gap: 7px; } .filter { border: 1px solid #ded5ce; border-radius: 24px; background: transparent; padding: 8px 15px; font-size: 12px; } .filter[aria-pressed="true"] { background: #673941; color: white; border-color: #673941; } .search { border: 1px solid #ded5ce; background: transparent; padding: 10px 18px; border-radius: 25px; width: 240px; }
+/* # Display three product cards per desktop row. */
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 28px; } .product { min-width: 0; } .product-image { position: relative; border-radius: 12px; background: #f0ece7; padding: 32px; height: 280px; } .product-image img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; } .product-tag { position: absolute; top: 14px; left: 16px; background: #fbf9f4; border-radius: 20px; padding: 3px 10px; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+/* # Align prices with compact add buttons below each product. */
+.product>.eyebrow { margin-top: 22px; color: #8b5d64; } .product h3 { min-height: 50px; } .product-bottom { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 17px; } .product-bottom b { font-size: 14px; } .product-bottom button { border: 1px solid #673941; border-radius: 22px; padding: 8px 15px; background: transparent; font-size: 11px; } .source { display: inline-block; font-size: 10px; color: #7b6f70; margin-top: 15px; text-decoration: none; }
+/* # Add an understated offer panel and an editorial about section. */
+.offer { margin: 0 8%; background: #eee1de; border-radius: 12px; padding: 45px 6%; display: flex; justify-content: space-between; align-items: center; gap: 35px; } .offer a { font-size: 12px; } .about { text-align: center; padding: 90px 20px; max-width: 650px; margin: auto; } .about>p:not(.eyebrow) { color: #7b6f70; } .signature { font: italic 22px Georgia, serif; }
+/* # Simple footer with no invented business contact details. */
+footer { background: #673941; color: #fff8ee; display: flex; justify-content: space-between; gap: 25px; padding: 35px 8%; font-size: 11px; } footer b { letter-spacing: 2px; } footer a { text-decoration: none; } footer p { opacity: .8; }
+/* # A native modal dialog provides the hidden slide-style cart panel. */
+dialog { position: fixed; inset: 0 0 0 auto; margin: 0; width: 520px; max-width: 100%; height: 100%; max-height: 100%; border: 0; padding: 30px; background: #fbf9f4; color: #38252b; } dialog::backdrop { background: #24151a80; } .cart-top { display: flex; justify-content: space-between; align-items: start; } .close { border: none; background: none; font-size: 30px; }
+/* # Cart rows use a small picture, product details and quantity controls. */
+.bag-item { display: grid; grid-template-columns: 65px 1fr; gap: 16px; padding: 20px 0; border-bottom: 1px solid #e5ded7; } .bag-item img { width: 65px; height: 85px; object-fit: contain; mix-blend-mode: multiply; } .bag-item h3 { font-size: 17px; margin: 0 0 8px; } .bag-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 12px; margin-top: 10px; } .bag-actions button { background: transparent; border: 1px solid #ded5ce; padding: 3px 9px; border-radius: 5px; }
+/* # Style the coupon input and order totals. */
+.coupon-row { margin-top: 25px; } .coupon-row label { display: block; margin-bottom: 10px; font-size: 12px; } .coupon-row>div { display: flex; } .coupon-row input { min-width: 0; flex: 1; background: white; border: 1px solid #ded5ce; padding: 10px; } .coupon-row button { border: none; background: #673941; color: white; padding: 10px 20px; } .text-button { border: none; background: none; text-decoration: underline; font-size: 11px; padding: 8px 0; } .totals p { display: flex; justify-content: space-between; } .grand-total { border-top: 1px solid #ded5ce; padding-top: 16px; font-size: 22px; font-family: Georgia, serif; } .checkout { width: 100%; } .small { font-size: 11px; } #receipt:not(:empty) { border: 1px solid #ded5ce; padding: 18px; margin-top: 20px; } #receipt h2 { font-size: 25px; } #receipt li, #receipt p { font-size: 12px; }
+/* # Brief add-to-bag feedback sits above the page without opening the cart. */
+.toast { position: fixed; bottom: 20px; left: 20px; right: 20px; max-width: 460px; background: #673941; color: white; border-radius: 10px; padding: 16px 22px; z-index: 3; box-shadow: 0 5px 25px #38252b22; font-size: 13px; }
+/* # Tablet and phone layouts need no extra JavaScript. */
+@media (max-width: 800px) { header { padding: 14px 5%; } nav { gap: 16px; } .hero { padding: 40px 6%; gap: 25px; } .hero-art { height: 380px; } .art-price { display: none; } .product-grid { grid-template-columns: repeat(2, 1fr); } .product-image { height: 240px; } .section-head { display: block; } .benefits { font-size: 10px; } .offer { padding: 30px; } }
+/* # Stack the hero and simplify navigation on small screens. */
+@media (max-width: 540px) { nav a { display: none; } .hero { grid-template-columns: 1fr; } .hero-art { height: 350px; } .hero h1 { font-size: 56px; } .hero-foot { margin-bottom: 5px; } .benefits { flex-direction: column; gap: 8px; } .collection { padding: 45px 5%; } .product-grid { gap: 30px 14px; } .product-image { padding: 25px 12px; height: 190px; } .product h3 { font-size: 19px; min-height: 62px; } .product-bottom { align-items: start; flex-direction: column; } .offer { margin: 0 5%; flex-direction: column; align-items: start; } footer { flex-direction: column; } .search { width: 100%; } dialog { padding: 22px; } }

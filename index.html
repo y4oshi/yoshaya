@@ -1,0 +1,174 @@
+<!-- # Displays this labelled shop section or control. -->
+<!DOCTYPE html>
+<!-- # Displays this labelled shop section or control. -->
+<html lang="en">
+<!-- # Displays this labelled shop section or control. -->
+<head>
+<!-- # Sets text encoding or mobile page sizing. -->
+<meta charset="UTF-8">
+<!-- # Sets text encoding or mobile page sizing. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- # Displays this labelled shop section or control. -->
+<title>ICSK Stationery | Everyday essentials, thoughtfully chosen</title>
+<!-- # Loads the shared stylesheet. -->
+<link rel="stylesheet" href="style.css">
+<!-- # Closes this page section. -->
+</head>
+<!-- # Displays this labelled shop section or control. -->
+<body>
+<!-- # Displays this labelled shop section or control. -->
+<div class="announcement">A little inspiration for every day. &nbsp; / &nbsp; Kuwait · Prices in KD</div>
+<!-- # Displays this labelled shop section or control. -->
+<header>
+<!-- # Displays this labelled shop section or control. -->
+<a class="brand" href="#"><img src="school-logo.png" alt="Indian Community School, Kuwait logo"><span>ICSK<span class="brand-small">STATIONERY</span></span></a>
+<!-- # Displays this labelled shop section or control. -->
+<nav aria-label="Main navigation"><a href="#products">The collection</a><a href="#about">Our corner</a><button class="cart-button" onclick="openCart()">Bag <span id="cartCount">0</span> ↗</button></nav>
+<!-- # Closes this page section. -->
+</header>
+<!-- # Displays this labelled shop section or control. -->
+<main>
+<!-- # Displays this labelled shop section or control. -->
+<section class="hero">
+<!-- # Displays this labelled shop section or control. -->
+<div><p class="eyebrow">THE EVERYDAY COLLECTION</p><h1>Bright ideas.<br>Beautiful<br><i>beginnings.</i></h1><p class="intro">For the notes you take, the plans you make,<br>and everything you’re yet to imagine.</p><a class="button" href="#products">Find your essentials &nbsp; ↗</a><p class="hero-foot">PENS &nbsp; / &nbsp; PAPER &nbsp; / &nbsp; POSSIBILITIES</p></div>
+<!-- # Displays this labelled shop section or control. -->
+<div class="hero-art"><span class="art-label">THE DESK EDIT / 01</span><img class="hero-book" src="product-4.jpg" alt="Oxford A4 spiral notebook"><img class="hero-pencil" src="product-2.jpg" alt="STAEDTLER Noris pencil pack"><span class="art-note">A fresh page.<br>A new possibility.</span><span class="art-price">Everyday essentials<br><b>from KD 0.450</b></span></div>
+<!-- # Closes this page section. -->
+</section>
+<!-- # Displays this labelled shop section or control. -->
+<div class="benefits"><span>01 &nbsp; Essentials for every subject</span><span>02 &nbsp; Familiar stationery brands</span><span>03 &nbsp; Clear prices in Kuwaiti dinars</span></div>
+<!-- # Displays this labelled shop section or control. -->
+<section class="collection" id="products">
+<!-- # Displays this labelled shop section or control. -->
+<div class="section-head"><div><p class="eyebrow">GOOD THINGS START HERE</p><h2>Your desk, <i>well supplied.</i></h2></div><p>Small tools for your biggest ideas.</p></div>
+<!-- # Displays this labelled shop section or control. -->
+<div class="toolbar"><div class="filters" aria-label="Product categories"><button class="filter" aria-pressed="true" onclick="filterCategory('All', this)">All</button>
+<!-- # Adds a button connected to its named JavaScript function. -->
+<button class="filter" aria-pressed="false" onclick="filterCategory('Pens', this)">Pens</button>
+<!-- # Adds a button connected to its named JavaScript function. -->
+<button class="filter" aria-pressed="false" onclick="filterCategory('Pencils', this)">Pencils</button>
+<!-- # Adds a button connected to its named JavaScript function. -->
+<button class="filter" aria-pressed="false" onclick="filterCategory('Markers', this)">Markers</button>
+<!-- # Adds a button connected to its named JavaScript function. -->
+<button class="filter" aria-pressed="false" onclick="filterCategory('Books', this)">Books</button>
+<!-- # Adds a button connected to its named JavaScript function. -->
+<button class="filter" aria-pressed="false" onclick="filterCategory('Registers', this)">Registers</button>
+<!-- # Closes this page section. -->
+</div><input class="search" id="search" type="search" aria-label="Search stationery" placeholder="Search the collection…" oninput="filterProducts()"></div>
+<!-- # Displays this labelled shop section or control. -->
+<p id="resultCount" class="muted">6 essentials</p>
+<!-- # Displays this labelled shop section or control. -->
+<div class="product-grid">
+<!-- # Starts one searchable product card. -->
+<article class="product" data-category="Pens" data-search="Pentel ENERGEL 0.7 Navy Blue Pen Pens">
+<!-- # Displays the product image and category. -->
+<div class="product-image"><span class="product-tag">Pens</span><img src="product-0.jpg" alt="Pentel ENERGEL 0.7 Navy Blue Pen, 1 pen" loading="lazy"></div>
+<!-- # Displays this labelled shop section or control. -->
+<p class="eyebrow">Pentel</p><h3>ENERGEL 0.7 Navy Blue Pen</h3><p class="muted">1 pen</p>
+<!-- # Displays this labelled shop section or control. -->
+<div class="product-bottom"><b>KD 0.450</b><button onclick="addItem(0)" aria-label="Add ENERGEL 0.7 Navy Blue Pen to bag">Add to bag +</button></div>
+<!-- # Displays this labelled shop section or control. -->
+<a class="source" href="https://aleshraafco.com/products/pentel-energel-0-7-navy-blue-pen" target="_blank" rel="noopener">Product details ↗</a>
+<!-- # Closes this page section. -->
+</article>
+<!-- # Starts one searchable product card. -->
+<article class="product" data-category="Pens" data-search="Cello Tri-Mate Ball Pen — Blue Pens">
+<!-- # Displays the product image and category. -->
+<div class="product-image"><span class="product-tag">Pens</span><img src="product-1.jpg" alt="Cello Tri-Mate Ball Pen — Blue, 12 pens" loading="lazy"></div>
+<!-- # Displays this labelled shop section or control. -->
+<p class="eyebrow">Cello</p><h3>Tri-Mate Ball Pen — Blue</h3><p class="muted">12 pens</p>
+<!-- # Displays this labelled shop section or control. -->
+<div class="product-bottom"><b>KD 0.750</b><button onclick="addItem(1)" aria-label="Add Tri-Mate Ball Pen — Blue to bag">Add to bag +</button></div>
+<!-- # Displays this labelled shop section or control. -->
+<a class="source" href="https://aleshraafco.com/products/cello-tri-mate-x12-ae-cel-8766-sta" target="_blank" rel="noopener">Product details ↗</a>
+<!-- # Closes this page section. -->
+</article>
+<!-- # Starts one searchable product card. -->
+<article class="product" data-category="Pencils" data-search="STAEDTLER Noris Pencils Pencils">
+<!-- # Displays the product image and category. -->
+<div class="product-image"><span class="product-tag">Pencils</span><img src="product-2.jpg" alt="STAEDTLER Noris Pencils, 12 pencils" loading="lazy"></div>
+<!-- # Displays this labelled shop section or control. -->
+<p class="eyebrow">STAEDTLER</p><h3>Noris Pencils</h3><p class="muted">12 pencils</p>
+<!-- # Displays this labelled shop section or control. -->
+<div class="product-bottom"><b>KD 1.350</b><button onclick="addItem(2)" aria-label="Add Noris Pencils to bag">Add to bag +</button></div>
+<!-- # Displays this labelled shop section or control. -->
+<a class="source" href="https://aleshraafco.com/products/staedtler-12-noris-pencil-ae-sta-8868-sta" target="_blank" rel="noopener">Product details ↗</a>
+<!-- # Closes this page section. -->
+</article>
+<!-- # Starts one searchable product card. -->
+<article class="product" data-category="Markers" data-search="Pentel Maxiflo Whiteboard Markers Markers">
+<!-- # Displays the product image and category. -->
+<div class="product-image"><span class="product-tag">Markers</span><img src="product-3.jpg" alt="Pentel Maxiflo Whiteboard Markers, 4 pieces" loading="lazy"></div>
+<!-- # Displays this labelled shop section or control. -->
+<p class="eyebrow">Pentel</p><h3>Maxiflo Whiteboard Markers</h3><p class="muted">4 pieces</p>
+<!-- # Displays this labelled shop section or control. -->
+<div class="product-bottom"><b>KD 1.650</b><button onclick="addItem(3)" aria-label="Add Maxiflo Whiteboard Markers to bag">Add to bag +</button></div>
+<!-- # Displays this labelled shop section or control. -->
+<a class="source" href="https://aleshraafco.com/products/penstel-maxifilo-white-board-marker-ae-pen-8703-sta" target="_blank" rel="noopener">Product details ↗</a>
+<!-- # Closes this page section. -->
+</article>
+<!-- # Starts one searchable product card. -->
+<article class="product" data-category="Books" data-search="Oxford Spiral Cover Notebook A4 Books">
+<!-- # Displays the product image and category. -->
+<div class="product-image"><span class="product-tag">Books</span><img src="product-4.jpg" alt="Oxford Spiral Cover Notebook A4, 60 sheets" loading="lazy"></div>
+<!-- # Displays this labelled shop section or control. -->
+<p class="eyebrow">Oxford</p><h3>Spiral Cover Notebook A4</h3><p class="muted">60 sheets</p>
+<!-- # Displays this labelled shop section or control. -->
+<div class="product-bottom"><b>KD 0.850</b><button onclick="addItem(4)" aria-label="Add Spiral Cover Notebook A4 to bag">Add to bag +</button></div>
+<!-- # Displays this labelled shop section or control. -->
+<a class="source" href="https://aleshraafco.com/products/oxford-spiral-cover-notebook-a4-60-sheets-dftr-wksfwrd-a4-bglf-hlzwny-60-wrq-ae-oxf-16483-sta" target="_blank" rel="noopener">Product details ↗</a>
+<!-- # Closes this page section. -->
+</article>
+<!-- # Starts one searchable product card. -->
+<article class="product" data-category="Registers" data-search="Register Register Book F/S 3QR Registers">
+<!-- # Displays the product image and category. -->
+<div class="product-image"><span class="product-tag">Registers</span><img src="product-5.jpg" alt="Register Register Book F/S 3QR, 1 register" loading="lazy"></div>
+<!-- # Displays this labelled shop section or control. -->
+<p class="eyebrow">Register</p><h3>Register Book F/S 3QR</h3><p class="muted">1 register</p>
+<!-- # Displays this labelled shop section or control. -->
+<div class="product-bottom"><b>KD 1.500</b><button onclick="addItem(5)" aria-label="Add Register Book F/S 3QR to bag">Add to bag +</button></div>
+<!-- # Displays this labelled shop section or control. -->
+<a class="source" href="https://aleshraafco.com/products/sinar-line-register-book-f-s-3qr-144-sheets-ae-sin-10469-sta" target="_blank" rel="noopener">Product details ↗</a>
+<!-- # Closes this page section. -->
+</article>
+<!-- # Closes this page section. -->
+</div><p id="noResults" hidden>No essentials match your search. Try another name or category.</p>
+<!-- # Closes this page section. -->
+</section>
+<!-- # Displays this labelled shop section or control. -->
+<section class="offer"><div><p class="eyebrow">A LITTLE EXTRA, ON US</p><h2>Make room for<br><i>one more idea.</i></h2></div><div><p>Use <b>SCHOOL10</b> for 10% off your bag.<br>Or <b>SAVE250</b> for 250 fils off KD 3.000 or more.</p><p class="muted">One code per bag. Apply your code at checkout.</p><a href="#products">Explore the collection ↗</a></div></section>
+<!-- # Displays this labelled shop section or control. -->
+<section id="about" class="about"><p class="eyebrow">THE STATIONERY CORNER</p><h2>Made for the<br><i>everyday extraordinary.</i></h2><p>A well-used notebook. A favourite blue pen. A pencil ready for the next idea. Discover the simple essentials that make learning, planning and creating feel a little more considered.</p><p class="signature">For a brighter future.</p></section>
+<!-- # Closes this page section. -->
+</main>
+<!-- # Displays this labelled shop section or control. -->
+<footer><div><b>ICSK STATIONERY</b><p>The Indian Community School, Kuwait</p></div><div><a href="#products">The collection</a> &nbsp; <a href="#about">Our corner</a><p>Reference retail prices checked 3 November 2026. Prices may change.</p></div></footer>
+<!-- # Displays this labelled shop section or control. -->
+<p id="shopMessage" class="toast" role="status" hidden></p>
+<!-- # Creates the native cart dialog; it stays hidden until the Bag button opens it. -->
+<dialog id="cartPanel" aria-labelledby="cartTitle">
+<!-- # Displays this labelled shop section or control. -->
+<div class="cart-top"><div><p class="eyebrow">YOUR EVERYDAY ESSENTIALS</p><h2 id="cartTitle">Your bag</h2></div><button class="close" onclick="closeCart()" aria-label="Close bag">×</button></div>
+<!-- # Displays this labelled shop section or control. -->
+<div id="cartArea"></div>
+<!-- # Displays this labelled shop section or control. -->
+<div class="coupon-row"><label for="couponInput">Have a little extra?</label><div><input id="couponInput" type="text" placeholder="Enter coupon code"><button onclick="applyCoupon()">Apply</button></div></div>
+<!-- # Displays this labelled shop section or control. -->
+<p id="couponMessage" class="muted" role="status"></p><button class="text-button" onclick="removeCoupon()">Remove coupon</button>
+<!-- # Displays this labelled shop section or control. -->
+<div class="totals"><p>Subtotal <span id="subtotal"></span></p><p>Discount <span id="discount"></span></p><p class="grand-total">Total <span id="total"></span></p></div>
+<!-- # Adds a button connected to its named JavaScript function. -->
+<button class="button checkout" onclick="checkout()">Create order summary ↗</button>
+<!-- # Adds a button connected to its named JavaScript function. -->
+<button class="text-button" onclick="clearCart()">Empty bag</button><p class="muted small">Payment and order submission are not available online. Delivery charges are not included.</p>
+<!-- # Displays this labelled shop section or control. -->
+<div id="receipt"></div>
+<!-- # Closes this page section. -->
+</dialog>
+<!-- # Loads the beginner JavaScript after the page exists. -->
+<script src="shop.js"></script>
+<!-- # Closes this page section. -->
+</body>
+<!-- # Closes this page section. -->
+</html>
